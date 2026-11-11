@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import scenes from '../data/scenes.json';
+
+// Split each scene's categories into balanced rows of at most 4 columns.
+function balancedRows(categories, max = 4) {
+    if (!categories.length) return [];
+    const rowCount = Math.max(1, Math.ceil(categories.length / max));
+    const base = Math.floor(categories.length / rowCount);
+    const remainder = categories.length % rowCount;
+    const rows = [];
+    let index = 0;
+    for (let i = 0; i < rowCount; i++) {
+        const size = base + (i < remainder ? 1 : 0);
+        rows.push(categories.slice(index, index + size));
+        index += size;
+    }
+    return rows;
+}
+
+const sceneViews = scenes.map((scene) => ({
+    ...scene,
+    rows: balancedRows(scene.categories),
+}));
+---
+
+<BaseLayout activeKey="home">
+    <div class="ui container">
+        <div class="ui secondary pointing menu scene-menu" role="tablist" aria-label="场景">
+            {sceneViews.map((scene, index) => (
+                <a
+                    id={`scene-tab-${scene.id}`}
+                    class={`item${index === 0 ? ' active' : ''}`}
+                    data-scene={scene.id}
+                    href={`#${scene.id}`}
+                    role="tab"
+                    aria-selected={index === 0 ? 'true' : 'false'}
+                    aria-controls={`scene-${scene.id}`}
+                >
+                    <i class={`${scene.icon} icon`}></i>{scene.name}
+                </a>
+            ))}
+        </div>
+    </div>
+
+    {sceneViews.map((scene, index) => (
+        <div
+            id={`scene-${scene.id}`}
+            class="scene-panel"
+            data-scene-panel={scene.id}
+            role="tabpanel"
+            aria-labelledby={`scene-tab-${scene.id}`}
+            hidden={index !== 0}
+        >
+            {scene.rows.map((row) => (
+                <div class="ui vertical stripe links segment">
+                    <div class="ui equal width stackable internally celled grid">
+                        <div class="center aligned row">
+                            {row.map((category) => (
+                                <div class="links column">
+                                    <div class="ui mini top attached label">{category.name}</div>
+                                    <div class="ui mini labels">
+                                        {category.links.map((link) => (
+                                            <a class={`ui mini ${link.style} label`} href={link.url} target="_blank">{link.icon && <i class={`${link.icon} icon`}></i>}{link.name}</a>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    ))}
+</BaseLayout>

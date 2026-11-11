@@ -1,0 +1,172 @@
+[
+  {
+    "id": "baidu",
+    "name": "百度",
+    "url": "https://www.baidu.com/s?wd={query}",
+    "shortcut": {
+      "icon": "paw blue inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "google",
+    "name": "谷歌",
+    "url": "https://www.google.com/search?q={query}",
+    "shortcut": {
+      "icon": "google red inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "bing",
+    "name": "必应",
+    "url": "https://cn.bing.com/search?q={query}",
+    "shortcut": {
+      "icon": "microsoft teal inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "duckduckgo",
+    "name": "DuckDuckGo",
+    "url": "https://duckduckgo.com/?ia=web&q={query}",
+    "shortcut": {
+      "icon": "search teal inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "googlescholar",
+    "name": "谷歌学术",
+    "url": "https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q={query}",
+    "shortcut": {
+      "icon": "graduation cap blue inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "pubmed",
+    "name": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term={query}",
+    "shortcut": {
+      "icon": "book blue inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "scihub",
+    "name": "Sci-Hub",
+    "url": "https://sci-hub.reatk.com/search/?q={query}&exact=1",
+    "shortcut": {
+      "icon": "file pdf red inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "cnki",
+    "name": "中国知网",
+    "url": "https://kns.cnki.net/kns8s/defaultresult/index?crossids=YSTT4HG0%2CLSTPFY1C%2CEMRPGLPA%2CJUP3MUPD%2CMPMFIG1A%2CWQ0UVIAA%2CBLZOG7CK%2CPWFIRAGL%2CNLBO1Z6R%2CNN3FJMUV&korder=SU&kw={query}",
+    "shortcut": {
+      "icon": "book red inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "baiduxueshu",
+    "name": "百度学术",
+    "url": "https://xueshu.baidu.com/ndscholar/browse/search?wd={query}",
+    "shortcut": {
+      "icon": "graduation cap orange inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "url": "https://www.youtube.com/results?search_query={query}",
+    "shortcut": {
+      "icon": "youtube red inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "bilibili",
+    "name": "哔哩哔哩",
+    "url": "https://www.bilibili.com/?page=SearchResults&keyword={query}",
+    "shortcut": {
+      "icon": "tv pink inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "weibo",
+    "name": "微博",
+    "url": "https://s.weibo.com/weibo?q={query}",
+    "shortcut": {
+      "icon": "weibo red inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "url": "https://www.amazon.com/s?url=search-alias%3Daps&field-keywords={query}",
+    "shortcut": {
+      "icon": "amazon yellow inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "wikipedia",
+    "name": "维基百科",
+    "url": "https://zh.wikipedia.org/w/index.php?search={query}",
+    "shortcut": {
+      "icon": "wikipedia w inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "annasarchive",
+    "name": "Anna’s Archive",
+    "url": "https://annas-archive.gd/search?q={query}",
+    "shortcut": {
+      "icon": "book green inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "douban",
+    "name": "豆瓣",
+    "url": "https://www.douban.com/search?source=suggest&q={query}",
+    "shortcut": {
+      "icon": "seedling green inverted",
+      "style": "black",
+      "show": true
+    }
+  },
+  {
+    "id": "tmdb",
+    "name": "TMDB",
+    "url": "https://www.themoviedb.org/search?query={query}",
+    "shortcut": {
+      "icon": "film blue inverted",
+      "style": "black",
+      "show": true
+    }
+  }
+]

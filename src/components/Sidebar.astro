@@ -1,0 +1,15 @@
+---
+import site from '../data/site';
+import MenuItems from './MenuItems.astro';
+---
+
+<div class="ui vertical inverted sidebar menu">
+    <a class="header item" href="/">
+        <div class="ui middle aligned image">
+            <img class="logo-image" src={site.logoWhite} alt="Logo" />
+        </div>
+        <div class="logo-text">{site.aliasEn}</div>
+    </a>
+    <MenuItems />
+    <a class="item" href={site.repositoryUrl} target="_blank"><i class="github icon"></i>GitHub</a>
+</div>

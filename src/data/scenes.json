@@ -1,0 +1,1485 @@
+[
+  {
+    "id": "default",
+    "name": "默认",
+    "icon": "home",
+    "categories": [
+      {
+        "name": "邮箱",
+        "links": [
+          {
+            "name": "QQ邮箱，常联系",
+            "style": "basic",
+            "url": "https://mail.qq.com",
+            "icon": "envelope"
+          },
+          {
+            "name": "OutLook",
+            "style": "basic",
+            "url": "https://outlook.com",
+            "icon": "envelope"
+          },
+          {
+            "name": "Gmail",
+            "style": "red",
+            "url": "https://mail.google.com",
+            "icon": "envelope"
+          },
+          {
+            "name": "IEEE 邮件",
+            "style": "blue",
+            "url": "http://email.ieee.org/",
+            "icon": "envelope"
+          },
+          {
+            "name": "DNSHE-V.CD邮箱",
+            "style": "basic",
+            "url": "https://mail.v.cd/",
+            "icon": "envelope"
+          }
+        ]
+      },
+      {
+        "name": "云存储",
+        "links": [
+          {
+            "name": "OSCA联盟云存储",
+            "style": "basic",
+            "url": "https://ocloud.ihep.ac.cn/"
+          },
+          {
+            "name": "123云盘",
+            "style": "blue",
+            "url": "https://yun.123pan.cn"
+          },
+          {
+            "name": "光鸭云盘",
+            "style": "basic",
+            "url": "https://www.guangyapan.com/#/home/all"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "同桌英语",
+            "style": "basic",
+            "url": "https://ielts.itongzhuo.com/ielts_test/student/ielts_index.jsp?preUrl=/business/ielts/student/jumpMyLearningCenter.do"
+          },
+          {
+            "name": "短视频批量解析助手",
+            "style": "basic",
+            "url": "https://parse.gotab.cn"
+          },
+          {
+            "name": "虫部落",
+            "style": "green",
+            "url": "https://www.chongbuluo.com/"
+          },
+          {
+            "name": "学术搜索",
+            "style": "green",
+            "url": "https://scholar.chongbuluo.com/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "work",
+    "name": "工作身份",
+    "icon": "briefcase",
+    "categories": [
+      {
+        "name": "境内博士招生",
+        "links": [
+          {
+            "name": "中国科学院大学博士招生信息",
+            "style": "basic",
+            "url": "https://admission.ucas.ac.cn/ShowArticle/newslist/047420c8-14ba-442f-b09c-ee3b2f2c29f3"
+          },
+          {
+            "name": "南京大学博士招生",
+            "style": "basic",
+            "url": "https://yzb.nju.edu.cn/47841/list.htm"
+          },
+          {
+            "name": "广州海洋实验室",
+            "style": "basic",
+            "url": "https://www.gmlab.ac.cn/rcdw/rczp/"
+          },
+          {
+            "name": "崂山实验室 人才培养&招生",
+            "style": "basic",
+            "url": "https://www.lsnl.cn/culture/training"
+          },
+          {
+            "name": "北京大学研究生招生网",
+            "style": "basic",
+            "url": "https://admission.pku.edu.cn/zsxx/bszs/index.htm"
+          }
+        ]
+      },
+      {
+        "name": "学术社区",
+        "links": [
+          {
+            "name": "小木虫论坛-学术科研互动平台",
+            "style": "green",
+            "url": "https://muchong.com/bbs/index.php"
+          },
+          {
+            "name": "ResearchGate",
+            "style": "teal",
+            "url": "https://www.researchgate.net"
+          }
+        ]
+      },
+      {
+        "name": "学术就业",
+        "links": [
+          {
+            "name": "科学人才网-服务于海内外优秀…",
+            "style": "basic",
+            "url": "https://www.sciencehr.net/"
+          },
+          {
+            "name": "高校人才网",
+            "style": "basic",
+            "url": "https://www.gaoxiaojob.com/"
+          },
+          {
+            "name": "理聘-找理想工作上理聘网！博…",
+            "style": "basic",
+            "url": "https://www.lipind.com/"
+          },
+          {
+            "name": "LinkedIn",
+            "style": "blue",
+            "url": "https://www.linkedin.com/feed/",
+            "icon": "linkedin"
+          }
+        ]
+      },
+      {
+        "name": "政府化招聘",
+        "links": [
+          {
+            "name": "国家大学生就业服务平台",
+            "style": "red",
+            "url": "https://www.ncss.cn/"
+          },
+          {
+            "name": "国聘",
+            "style": "red",
+            "url": "https://www.iguopin.com/"
+          },
+          {
+            "name": "企事业单位招聘",
+            "style": "basic",
+            "url": "https://www.mnr.gov.cn/gk/rsxx/qtrykl/"
+          },
+          {
+            "name": "就业在线",
+            "style": "basic",
+            "url": "https://www.jobonline.cn/"
+          },
+          {
+            "name": "中国就业网",
+            "style": "basic",
+            "url": "https://chinajob.mohrss.gov.cn/"
+          },
+          {
+            "name": "江苏省人力资源和社会保障厅…",
+            "style": "basic",
+            "url": "https://jshrss.jiangsu.gov.cn/col/col78506/index.html"
+          },
+          {
+            "name": "乐业上海第一站",
+            "style": "basic",
+            "url": "https://jobs.rsj.sh.gov.cn/ggzp-shrs/index.html#/"
+          }
+        ]
+      },
+      {
+        "name": "市场化招聘",
+        "links": [
+          {
+            "name": "智联招聘",
+            "style": "blue",
+            "url": "https://www.zhaopin.com/"
+          },
+          {
+            "name": "Indeed 中国",
+            "style": "blue",
+            "url": "https://cn.indeed.com/"
+          },
+          {
+            "name": "实习僧",
+            "style": "orange",
+            "url": "https://www.shixiseng.com/"
+          }
+        ]
+      },
+      {
+        "name": "人社",
+        "links": [
+          {
+            "name": "青岛市人力资源和社会保障局",
+            "style": "basic",
+            "url": "https://hrss.qingdao.gov.cn/"
+          },
+          {
+            "name": "江苏人社网办大厅",
+            "style": "basic",
+            "url": "https://rs.jshrss.jiangsu.gov.cn/index/"
+          },
+          {
+            "name": "就业创业",
+            "style": "basic",
+            "url": "https://hrss.qingdao.gov.cn/zq_47/jycy_47/tzgg_47/"
+          }
+        ]
+      },
+      {
+        "name": "哈工程校园网站",
+        "links": [
+          {
+            "name": "哈工程财务处综合信息门户",
+            "style": "basic",
+            "url": "http://cwcx.hrbeu.edu.cn/WFManager/login.jsp"
+          },
+          {
+            "name": "研究生教育管理信息系统－－拓…",
+            "style": "basic",
+            "url": "http://yjs.hrbeu.edu.cn/"
+          },
+          {
+            "name": "HEU校园信息门户",
+            "style": "basic",
+            "url": "http://ehome.hrbeu.edu.cn/"
+          },
+          {
+            "name": "水声工程学院",
+            "style": "basic",
+            "url": "http://uae.hrbeu.edu.cn/"
+          },
+          {
+            "name": "学校标识",
+            "style": "basic",
+            "url": "http://camel.hrbeu.edu.cn/2016/0504/c1429a30730/page.htm"
+          },
+          {
+            "name": "研究生院",
+            "style": "basic",
+            "url": "http://yjsy.hrbeu.edu.cn/"
+          },
+          {
+            "name": "网上办事中心",
+            "style": "basic",
+            "url": "http://one.hrbeu.edu.cn/taskcenter/workflow/index"
+          }
+        ]
+      },
+      {
+        "name": "行业学会协会",
+        "links": [
+          {
+            "name": "中国海洋学会",
+            "style": "basic",
+            "url": "http://www.cso.org.cn/"
+          },
+          {
+            "name": "中国海洋湖沼学会",
+            "style": "basic",
+            "url": "http://csol.qdio.ac.cn/"
+          },
+          {
+            "name": "IEEE",
+            "style": "blue",
+            "url": "https://www.ieee.org/"
+          },
+          {
+            "name": "中国科学技术协会",
+            "style": "basic",
+            "url": "https://www.cast.org.cn/index.html"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "共产党员网_中共中央组织部",
+            "style": "basic",
+            "url": "https://www.12371.cn/"
+          },
+          {
+            "name": "PhD position in Smart Ocean…",
+            "style": "basic",
+            "url": "https://scholarshipdb.net/scholarships-in-Norway/Ph-D-Position-In-Smart-Ocean-Observations-And-Drift-Modelling-For-Marine-Applications-Norwegian-Meteorological-Institute=UyHbpZPD8RG_9AzEeuBOuw?u_sub=okhYQlzqAnJDefSaoHhjfcrWLDd0rP0ffU9bfql%2BZWY%2Bg6opnlA%3D--0yKyIpG113iDGVvw--HiHm02UijQWrXm3UUp0b1A%3D%3D&utm_medium=email&utm_source=subscriptions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "name": "自媒体运营",
+    "icon": "bullhorn",
+    "categories": [
+      {
+        "name": "自媒体平台",
+        "links": [
+          {
+            "name": "知乎",
+            "style": "blue",
+            "url": "https://www.zhihu.com",
+            "icon": "zhihu"
+          },
+          {
+            "name": "哔哩哔哩",
+            "style": "pink",
+            "url": "https://www.bilibili.com",
+            "icon": "tv"
+          },
+          {
+            "name": "微博",
+            "style": "red",
+            "url": "https://weibo.com",
+            "icon": "weibo"
+          },
+          {
+            "name": "百度贴吧—全球领先的中文社区",
+            "style": "blue",
+            "url": "https://tieba.baidu.com",
+            "icon": "paw"
+          },
+          {
+            "name": "YouTube",
+            "style": "red",
+            "url": "https://www.youtube.com",
+            "icon": "youtube"
+          },
+          {
+            "name": "X（原：推特）",
+            "style": "black",
+            "url": "https://x.com",
+            "icon": "twitter"
+          },
+          {
+            "name": "小红书",
+            "style": "red",
+            "url": "https://www.xiaohongshu.com/explore"
+          },
+          {
+            "name": "抖音",
+            "style": "black",
+            "url": "https://www.douyin.com"
+          }
+        ]
+      },
+      {
+        "name": "微信公共号",
+        "links": [
+          {
+            "name": "微信公众平台",
+            "style": "basic",
+            "url": "https://mp.weixin.qq.com"
+          },
+          {
+            "name": "草料二维码生成器",
+            "style": "basic",
+            "url": "https://cli.im"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "NewsNow",
+            "style": "basic",
+            "url": "https://newsnow.busiyi.world"
+          },
+          {
+            "name": "阿里巴巴矢量图标库",
+            "style": "basic",
+            "url": "https://www.iconfont.cn"
+          },
+          {
+            "name": "Canva可画",
+            "style": "basic",
+            "url": "https://www.canva.cn/"
+          },
+          {
+            "name": "小红书创作服务平台",
+            "style": "red",
+            "url": "https://creator.xiaohongshu.com/login"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic",
+    "name": "学术",
+    "icon": "graduation cap",
+    "categories": [
+      {
+        "name": "检索",
+        "links": [
+          {
+            "name": "Semantic Scholar",
+            "style": "blue",
+            "url": "https://www.semanticscholar.org/me/research"
+          },
+          {
+            "name": "Google学术",
+            "style": "blue",
+            "url": "https://scholar.google.com",
+            "icon": "google"
+          },
+          {
+            "name": "科研通",
+            "style": "basic",
+            "url": "https://www.ablesci.com"
+          },
+          {
+            "name": "中国知网",
+            "style": "red",
+            "url": "https://www.cnki.net"
+          },
+          {
+            "name": "亚马逊",
+            "style": "orange",
+            "url": "https://www.amazon.com",
+            "icon": "amazon"
+          },
+          {
+            "name": "论文下载网",
+            "style": "basic",
+            "url": "https://www.scidownload.com/"
+          },
+          {
+            "name": "Library Genesis",
+            "style": "green",
+            "url": "https://libgen.li/"
+          },
+          {
+            "name": "Z-Library",
+            "style": "basic",
+            "url": "https://pdffree.channel/"
+          },
+          {
+            "name": "Anna’s Archive: LibGen (Libr…",
+            "style": "green",
+            "url": "https://annas-archive.gd/"
+          },
+          {
+            "name": "百度学术",
+            "style": "blue",
+            "url": "https://xueshu.baidu.com",
+            "icon": "paw"
+          },
+          {
+            "name": "中国权威的出版物数据服务平台…",
+            "style": "basic",
+            "url": "https://pdc.capub.cn/"
+          },
+          {
+            "name": "PubMed",
+            "style": "blue",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/"
+          },
+          {
+            "name": "Science Explorer",
+            "style": "basic",
+            "url": "https://scixplorer.org/"
+          },
+          {
+            "name": "Astrophysics Data System",
+            "style": "blue",
+            "url": "https://ui.adsabs.harvard.edu/"
+          },
+          {
+            "name": "NSTL国家科技图书文献中心",
+            "style": "basic",
+            "url": "https://www.nstl.gov.cn/"
+          },
+          {
+            "name": "中国科学技术信息研究所--国家…",
+            "style": "basic",
+            "url": "https://netl.istic.ac.cn/site/home"
+          },
+          {
+            "name": "智能检索",
+            "style": "red",
+            "url": "https://www.webofscience.com/wos/woscc/smart-search"
+          },
+          {
+            "name": "CARSI校外访问",
+            "style": "basic",
+            "url": "https://lib.gdou.edu.cn/engine2/general/5323894/detail?engineInstanceId=858696&typeId=3437330&pageId=37316&websiteId=29811&currentBranch=0"
+          },
+          {
+            "name": "标准/规范批量查新",
+            "style": "basic",
+            "url": "https://bz.gotab.cn"
+          }
+        ]
+      },
+      {
+        "name": "写作工具",
+        "links": [
+          {
+            "name": "Typst: The new foundation fo…",
+            "style": "blue",
+            "url": "https://typst.app/"
+          },
+          {
+            "name": "Overleaf, Online LaTeX Edito…",
+            "style": "green",
+            "url": "https://www.overleaf.com/"
+          },
+          {
+            "name": "论文协同编辑服务",
+            "style": "green",
+            "url": "https://latex.cstcloud.cn"
+          },
+          {
+            "name": "TeXHub",
+            "style": "basic",
+            "url": "https://www.texhub.com/"
+          },
+          {
+            "name": "TeXPage",
+            "style": "basic",
+            "url": "https://www.texpage.com/zh/"
+          },
+          {
+            "name": "FlyLaTeX",
+            "style": "green",
+            "url": "https://flylatex.cn/"
+          },
+          {
+            "name": "JointTex",
+            "style": "black",
+            "url": "https://jointtex.com/",
+            "icon": "twitter"
+          },
+          {
+            "name": "ScienHub",
+            "style": "basic",
+            "url": "https://scienhub.cn/"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "LaTeX 工作室",
+            "style": "green",
+            "url": "https://www.latexstudio.net/"
+          },
+          {
+            "name": "科研者之家-SCI写作助手-国家…",
+            "style": "basic",
+            "url": "https://professional.home-for-researchers.com/#/"
+          },
+          {
+            "name": "原创力文档-办公文档/行业资料…",
+            "style": "basic",
+            "url": "https://max.book118.com/"
+          },
+          {
+            "name": "教育网联邦认证与资源共享基础…",
+            "style": "basic",
+            "url": "https://www.carsi.edu.cn/index.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data",
+    "name": "数据",
+    "icon": "database",
+    "categories": [
+      {
+        "name": "数据平台",
+        "links": [
+          {
+            "name": "Introduction to Copernicus M…",
+            "style": "teal",
+            "url": "https://help.marine.copernicus.eu/en/collections/3740045-introduction-to-copernicus-marine-service"
+          },
+          {
+            "name": "Data : ICDC : University of…",
+            "style": "basic",
+            "url": "https://www.cen.uni-hamburg.de/en/icdc/data.html"
+          },
+          {
+            "name": "Data discovery guided by exp…",
+            "style": "teal",
+            "url": "https://climatedataguide.ucar.edu/"
+          },
+          {
+            "name": "iEarth DataHub",
+            "style": "basic",
+            "url": "https://data-starcloud.pcl.ac.cn/iearthdata"
+          }
+        ]
+      },
+      {
+        "name": "数据产品",
+        "links": [
+          {
+            "name": "ERA5 monthly averaged data o…",
+            "style": "teal",
+            "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means?tab=overview"
+          },
+          {
+            "name": "NSF NCAR Curated ECMWF Reana…",
+            "style": "basic",
+            "url": "https://registry.opendata.aws/nsf-ncar-era5/"
+          }
+        ]
+      },
+      {
+        "name": "工具包",
+        "links": [
+          {
+            "name": "GeoCAT-examples Documentatio…",
+            "style": "basic",
+            "url": "https://geocat-examples.readthedocs.io/en/latest/index.html"
+          },
+          {
+            "name": "ecmwf-datastores-client",
+            "style": "basic",
+            "url": "https://ecmwf.github.io/ecmwf-datastores-client/README.html#configuration"
+          },
+          {
+            "name": "Detect, classify, and visual…",
+            "style": "basic",
+            "url": "https://robwschlegel.github.io/heatwaveR/index.html"
+          },
+          {
+            "name": "earthkit-plots latest docume…",
+            "style": "basic",
+            "url": "https://earthkit-plots.readthedocs.io/en/latest/index.html"
+          },
+          {
+            "name": "acccmip6 2.0.3 documentation",
+            "style": "basic",
+            "url": "https://acccmip6.readthedocs.io/en/latest"
+          },
+          {
+            "name": "SciPy",
+            "style": "blue",
+            "url": "https://scipy.org/"
+          }
+        ]
+      },
+      {
+        "name": "CMIP-ESGF",
+        "links": [
+          {
+            "name": "esgpull documentation",
+            "style": "green",
+            "url": "https://esgf.github.io/esgf-download/"
+          },
+          {
+            "name": "Nodes",
+            "style": "green",
+            "url": "https://esgf.github.io/nodes.html"
+          },
+          {
+            "name": "Documentation for intake-esg…",
+            "style": "green",
+            "url": "https://intake-esgf.readthedocs.io/en/latest/"
+          },
+          {
+            "name": "Coupled Model Intercompariso…",
+            "style": "basic",
+            "url": "https://wcrp-cmip.org/"
+          }
+        ]
+      },
+      {
+        "name": "dataset",
+        "links": [
+          {
+            "name": "Datasets · ModelScope",
+            "style": "blue",
+            "url": "https://www.modelscope.ai/datasets"
+          },
+          {
+            "name": "数据集首页 · 魔搭社区",
+            "style": "blue",
+            "url": "https://www.modelscope.cn/datasets"
+          },
+          {
+            "name": "Datasets",
+            "style": "yellow",
+            "url": "https://huggingface.co/datasets"
+          }
+        ]
+      },
+      {
+        "name": "公司数据",
+        "links": [
+          {
+            "name": "镜像地球天气查询",
+            "style": "basic",
+            "url": "https://mirror-earth.com/"
+          },
+          {
+            "name": "镜像地球开放平台",
+            "style": "basic",
+            "url": "https://open.mirror-earth.com/"
+          },
+          {
+            "name": "Earth Data Hub",
+            "style": "basic",
+            "url": "https://earthdatahub.destine.eu/"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "SWAN- Delft University of Te…",
+            "style": "blue",
+            "url": "https://swanmodel.sourceforge.io/"
+          },
+          {
+            "name": "ROMS",
+            "style": "blue",
+            "url": "https://www.myroms.org/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tech",
+    "name": "技术",
+    "icon": "code",
+    "categories": [
+      {
+        "name": "云计算",
+        "links": [
+          {
+            "name": "阿里云",
+            "style": "orange",
+            "url": "https://www.aliyun.com",
+            "icon": "cloud"
+          },
+          {
+            "name": "腾讯云",
+            "style": "blue",
+            "url": "https://cloud.tencent.com/act/cps/redirect?redirect=6425&cps_key=ed5d353e58c55002bf6045db776f7f7c&from=console",
+            "icon": "cloud"
+          },
+          {
+            "name": "火山引擎",
+            "style": "blue",
+            "url": "https://www.volcengine.com",
+            "icon": "cloud"
+          },
+          {
+            "name": "华为云，用AI解行业难题-华为…",
+            "style": "red",
+            "url": "https://www.huaweicloud.com/",
+            "icon": "cloud"
+          },
+          {
+            "name": "京东云",
+            "style": "red",
+            "url": "https://www.jdcloud.com/",
+            "icon": "cloud"
+          },
+          {
+            "name": "百度智能云-“芯云模体”新全栈A…",
+            "style": "blue",
+            "url": "https://cloud.baidu.com/",
+            "icon": "paw"
+          },
+          {
+            "name": "Cloudflare: Build for the ag…",
+            "style": "orange",
+            "url": "https://www.cloudflare.com/",
+            "icon": "cloud"
+          }
+        ]
+      },
+      {
+        "name": "HPC超算平台",
+        "links": [
+          {
+            "name": "超算互联网",
+            "style": "teal",
+            "url": "https://www.scnet.cn/ui/mall/"
+          },
+          {
+            "name": "北京北龙超级云计算有限责任公…",
+            "style": "teal",
+            "url": "https://www.blsc.cn/"
+          },
+          {
+            "name": "山河超级计算平台",
+            "style": "teal",
+            "url": "https://www.shanhe.com/"
+          },
+          {
+            "name": "蓝图心算",
+            "style": "basic",
+            "url": "https://www.lantuxs.cn/"
+          },
+          {
+            "name": "HPCPlus平台",
+            "style": "basic",
+            "url": "https://hpcplus.ssc.net.cn/science-portal-cloud/index;JSESSIONID=442e0460-6912-4b6c-a5f0-34cade972ff4"
+          },
+          {
+            "name": "超算人工智能平台",
+            "style": "teal",
+            "url": "http://nscc.zzu.edu.cn/ai#/index"
+          },
+          {
+            "name": "国家超级计算天津中心",
+            "style": "teal",
+            "url": "https://www.nscc-tj.cn/"
+          },
+          {
+            "name": "国家超级计算深圳中心",
+            "style": "teal",
+            "url": "https://www.nsccsz.cn/"
+          },
+          {
+            "name": "中国国家网格",
+            "style": "basic",
+            "url": "http://www.cngrid.org/"
+          },
+          {
+            "name": "首页",
+            "style": "basic",
+            "url": "https://stateioc.cn/"
+          },
+          {
+            "name": "超算百科，一站式超级计算机知…",
+            "style": "basic",
+            "url": "https://www.chaosuanwiki.com/"
+          },
+          {
+            "name": "超算小站",
+            "style": "teal",
+            "url": "https://nscc.mrzhenggang.com/"
+          },
+          {
+            "name": "智算网络联盟",
+            "style": "basic",
+            "url": "https://c2net.openi.org.cn/"
+          }
+        ]
+      },
+      {
+        "name": "CPU-GPU算力",
+        "links": [
+          {
+            "name": "Code Workspace · ModelScope",
+            "style": "blue",
+            "url": "https://www.modelscope.ai/code/workspace"
+          },
+          {
+            "name": "AutoDL",
+            "style": "basic",
+            "url": "https://www.autodl.com/home"
+          },
+          {
+            "name": "英博云",
+            "style": "basic",
+            "url": "https://www.ebtech.com/"
+          },
+          {
+            "name": "飞桨AI Studio星河社区-人工智…",
+            "style": "blue",
+            "url": "https://aistudio.baidu.com/overview",
+            "icon": "paw"
+          },
+          {
+            "name": "和鲸ModelWhale",
+            "style": "basic",
+            "url": "https://www.modelwhale.com/"
+          },
+          {
+            "name": "Alaya NeW",
+            "style": "basic",
+            "url": "https://www.alayanew.com/"
+          },
+          {
+            "name": "华为云开发者官网_华为云",
+            "style": "red",
+            "url": "https://developer.huaweicloud.com/",
+            "icon": "cloud"
+          }
+        ]
+      },
+      {
+        "name": "Devops",
+        "links": [
+          {
+            "name": "Github",
+            "style": "black",
+            "url": "https://github.com",
+            "icon": "github"
+          },
+          {
+            "name": "Gitee",
+            "style": "red",
+            "url": "https://gitee.com",
+            "icon": "git square"
+          },
+          {
+            "name": "Gitcode",
+            "style": "red",
+            "url": "https://gitcode.com"
+          },
+          {
+            "name": "CNB:一切皆代码",
+            "style": "basic",
+            "url": "https://cnb.cool/"
+          },
+          {
+            "name": "腾讯工蜂研发管理解决方案",
+            "style": "blue",
+            "url": "https://code.tencent.com/",
+            "icon": "cloud"
+          },
+          {
+            "name": "Gitea: Git with a cup of tea",
+            "style": "basic",
+            "url": "https://gitea.com/"
+          },
+          {
+            "name": "Codeberg.org",
+            "style": "blue",
+            "url": "https://codeberg.org/"
+          },
+          {
+            "name": "中国科技云代码可信托管仓储服…",
+            "style": "basic",
+            "url": "https://gitservice.cstcloud.cn/"
+          },
+          {
+            "name": "云效 Codeup · 组织级代码管理…",
+            "style": "orange",
+            "url": "https://codeup.aliyun.com/",
+            "icon": "cloud"
+          },
+          {
+            "name": "Облачный сервис хранения реп…",
+            "style": "basic",
+            "url": "https://gitflic.ru/"
+          },
+          {
+            "name": "微信开发者代码管理",
+            "style": "basic",
+            "url": "https://git.weixin.qq.com"
+          }
+        ]
+      },
+      {
+        "name": "编程语言",
+        "links": [
+          {
+            "name": "Python.org",
+            "style": "blue",
+            "url": "https://www.python.org/",
+            "icon": "python"
+          },
+          {
+            "name": "Fortran 编程语言",
+            "style": "violet",
+            "url": "https://fortran-lang.org/zh_CN/"
+          },
+          {
+            "name": "The Julia Programming Langua…",
+            "style": "purple",
+            "url": "https://julialang.org/"
+          },
+          {
+            "name": "MATLAB",
+            "style": "basic",
+            "url": "https://ww2.mathworks.cn"
+          },
+          {
+            "name": "R: The R Project for Statist…",
+            "style": "blue",
+            "url": "https://www.r-project.org/"
+          }
+        ]
+      },
+      {
+        "name": "Huggingface类",
+        "links": [
+          {
+            "name": "huggingface",
+            "style": "yellow",
+            "url": "https://huggingface.co"
+          },
+          {
+            "name": "Gitcode",
+            "style": "red",
+            "url": "https://gitcode.com"
+          },
+          {
+            "name": "ModelScope 魔搭社区",
+            "style": "blue",
+            "url": "https://modelscope.cn"
+          },
+          {
+            "name": "OpenI",
+            "style": "basic",
+            "url": "https://openi.pcl.ac.cn/"
+          },
+          {
+            "name": "魔乐社区",
+            "style": "basic",
+            "url": "https://modelers.cn/"
+          }
+        ]
+      },
+      {
+        "name": "AI",
+        "links": [
+          {
+            "name": "LongCat AI",
+            "style": "basic",
+            "url": "https://longcat.chat"
+          },
+          {
+            "name": "硅基流动",
+            "style": "violet",
+            "url": "https://cloud.siliconflow.cn"
+          },
+          {
+            "name": "阿里云百炼",
+            "style": "orange",
+            "url": "https://bailian.console.aliyun.com",
+            "icon": "cloud"
+          },
+          {
+            "name": "千问AI平台",
+            "style": "basic",
+            "url": "https://www.qianwenai.com/"
+          },
+          {
+            "name": "DeepSeek开放平台",
+            "style": "blue",
+            "url": "https://platform.deepseek.com"
+          }
+        ]
+      },
+      {
+        "name": "Page",
+        "links": [
+          {
+            "name": "edgeone",
+            "style": "blue",
+            "url": "https://cloud.tencent.com/product/teo",
+            "icon": "cloud"
+          },
+          {
+            "name": "帽子云，一站式前端解决方案",
+            "style": "basic",
+            "url": "https://maoziyun.com/"
+          },
+          {
+            "name": "Tencent EdgeOne",
+            "style": "basic",
+            "url": "https://edgeone.ai"
+          },
+          {
+            "name": "ESA边缘安全加速控制台",
+            "style": "orange",
+            "url": "https://esa.console.aliyun.com/",
+            "icon": "cloud"
+          },
+          {
+            "name": "Cloudflare Pages",
+            "style": "orange",
+            "url": "https://www.cloudflare.com/products/pages/",
+            "icon": "cloud"
+          },
+          {
+            "name": "Netlify",
+            "style": "teal",
+            "url": "https://www.netlify.com/"
+          },
+          {
+            "name": "Vercel",
+            "style": "black",
+            "url": "https://vercel.com/"
+          }
+        ]
+      },
+      {
+        "name": "操作系统",
+        "links": [
+          {
+            "name": "Debian",
+            "style": "red",
+            "url": "https://www.debian.org/",
+            "icon": "linux"
+          },
+          {
+            "name": "Fedora Linux",
+            "style": "blue",
+            "url": "https://fedoraproject.org/",
+            "icon": "linux"
+          },
+          {
+            "name": "红帽企业 Linux",
+            "style": "basic",
+            "url": "https://www.redhat.com/zh-cn/technologies/linux-platforms/enterprise-linux"
+          },
+          {
+            "name": "Ubuntu",
+            "style": "orange",
+            "url": "https://ubuntu.com/",
+            "icon": "linux"
+          },
+          {
+            "name": "openSUSE",
+            "style": "green",
+            "url": "https://get.opensuse.org/zh_CN/",
+            "icon": "linux"
+          },
+          {
+            "name": "AlmaLinux OS",
+            "style": "basic",
+            "url": "https://almalinux.org/",
+            "icon": "linux"
+          },
+          {
+            "name": "Rocky Linux",
+            "style": "basic",
+            "url": "https://rockylinux.org/",
+            "icon": "linux"
+          },
+          {
+            "name": "OpenAnolis代码库",
+            "style": "basic",
+            "url": "https://openanolis.cn/"
+          },
+          {
+            "name": "openEuler",
+            "style": "blue",
+            "url": "https://www.openeuler.openatom.cn/zh/"
+          },
+          {
+            "name": "The CentOS Project",
+            "style": "purple",
+            "url": "https://www.centos.org/",
+            "icon": "linux"
+          },
+          {
+            "name": "deepin",
+            "style": "blue",
+            "url": "https://www.deepin.org/index/zh"
+          },
+          {
+            "name": "麒麟",
+            "style": "basic",
+            "url": "https://www.kylinos.cn/"
+          },
+          {
+            "name": "中科红旗-红旗操作系统官方网…",
+            "style": "basic",
+            "url": "https://www.chinaredflag.cn/"
+          },
+          {
+            "name": "桌面操作系统-统信软件",
+            "style": "basic",
+            "url": "https://www.uniontech.com/os-desktop.html"
+          },
+          {
+            "name": "Linux Mint",
+            "style": "green",
+            "url": "https://www.linuxmint.com/",
+            "icon": "linux"
+          },
+          {
+            "name": "Alpine Linux",
+            "style": "blue",
+            "url": "https://alpinelinux.org/",
+            "icon": "linux"
+          }
+        ]
+      },
+      {
+        "name": "技术社区",
+        "links": [
+          {
+            "name": "V2EX",
+            "style": "black",
+            "url": "http://www.v2ex.com",
+            "icon": "twitter"
+          },
+          {
+            "name": "LINUX DO",
+            "style": "black",
+            "url": "https://linux.do",
+            "icon": "linux"
+          },
+          {
+            "name": "链滴",
+            "style": "blue",
+            "url": "https://ld246.com/"
+          },
+          {
+            "name": "TDP · 腾讯云开发者先锋",
+            "style": "basic",
+            "url": "https://tdp.fan/"
+          },
+          {
+            "name": "Scientific Python",
+            "style": "blue",
+            "url": "https://scientific-python.org/",
+            "icon": "python"
+          }
+        ]
+      },
+      {
+        "name": "编辑器",
+        "links": [
+          {
+            "name": "Visual Studio Code",
+            "style": "blue",
+            "url": "https://code.visualstudio.com/"
+          },
+          {
+            "name": "VSCodium",
+            "style": "basic",
+            "url": "https://vscodium.com/"
+          },
+          {
+            "name": "PyCharm，您需要的唯一 Python…",
+            "style": "orange",
+            "url": "https://www.jetbrains.com/zh-cn/pycharm/"
+          },
+          {
+            "name": "Positron",
+            "style": "blue",
+            "url": "https://positron.posit.co/"
+          },
+          {
+            "name": "Atom",
+            "style": "green",
+            "url": "https://atom-editor.cc/"
+          },
+          {
+            "name": "Texifier · Smoothest way to…",
+            "style": "basic",
+            "url": "https://www.texifier.com/"
+          },
+          {
+            "name": "Sublime Text",
+            "style": "orange",
+            "url": "https://www.sublimetext.com/"
+          },
+          {
+            "name": "Neovim",
+            "style": "green",
+            "url": "https://neovim.io/"
+          },
+          {
+            "name": "GNU Emacs",
+            "style": "red",
+            "url": "https://www.gnu.org/software/emacs/"
+          },
+          {
+            "name": "RStudio Desktop",
+            "style": "blue",
+            "url": "https://posit.co/downloads"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "Sub-Store",
+            "style": "basic",
+            "url": "https://sub-store.vercel.app/subs"
+          },
+          {
+            "name": "QianClouds(原小迈千云)",
+            "style": "basic",
+            "url": "https://www.qianclouds.com/"
+          },
+          {
+            "name": "故梦吖",
+            "style": "basic",
+            "url": "https://www.gmya.net/"
+          },
+          {
+            "name": "DNSHE",
+            "style": "basic",
+            "url": "https://my.dnshe.com/clientarea.php"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "life",
+    "name": "生活",
+    "icon": "coffee",
+    "categories": [
+      {
+        "name": "购物",
+        "links": [
+          {
+            "name": "京东",
+            "style": "red",
+            "url": "https://www.jd.com"
+          },
+          {
+            "name": "淘宝",
+            "style": "orange",
+            "url": "https://www.taobao.com"
+          },
+          {
+            "name": "什么值得买",
+            "style": "red",
+            "url": "https://www.smzdm.com"
+          },
+          {
+            "name": "天猫",
+            "style": "red",
+            "url": "https://www.tmall.com"
+          }
+        ]
+      },
+      {
+        "name": "影音娱乐",
+        "links": [
+          {
+            "name": "123分享社区",
+            "style": "black",
+            "url": "https://www.123panfx.com/",
+            "icon": "twitter"
+          },
+          {
+            "name": "BYRBT :: 首页",
+            "style": "blue",
+            "url": "https://byr.pt/index.php"
+          },
+          {
+            "name": "北洋园PT :: 首页",
+            "style": "blue",
+            "url": "https://tjupt.org/index.php"
+          }
+        ]
+      },
+      {
+        "name": "音乐",
+        "links": [
+          {
+            "name": "Qobuz",
+            "style": "blue",
+            "url": "https://www.qobuz.com/us-en/discover"
+          },
+          {
+            "name": "音兔音乐",
+            "style": "basic",
+            "url": "https://www.intooo.com/"
+          },
+          {
+            "name": "音兔网盘",
+            "style": "basic",
+            "url": "https://pan.intooo.com"
+          },
+          {
+            "name": "音兔无损",
+            "style": "basic",
+            "url": "https://www.ytws.net/"
+          },
+          {
+            "name": "OpenCD :: 种子",
+            "style": "green",
+            "url": "https://open.cd/torrents.php"
+          },
+          {
+            "name": "音兔MusicDB",
+            "style": "basic",
+            "url": "https://musicdb.intooo.com/"
+          },
+          {
+            "name": "24bit无损音乐网-无损音乐下载…",
+            "style": "basic",
+            "url": "https://www.24bit.net/"
+          },
+          {
+            "name": "爱听音乐网(2t58.Com)音乐下载",
+            "style": "basic",
+            "url": "https://www.2t58.com/"
+          }
+        ]
+      },
+      {
+        "name": "常用",
+        "links": [
+          {
+            "name": "播客 RSS Feed",
+            "style": "orange",
+            "url": "https://getpodcast.xyz/"
+          },
+          {
+            "name": "豆瓣",
+            "style": "green",
+            "url": "https://www.douban.com/",
+            "icon": "seedling"
+          },
+          {
+            "name": "三国杀OL",
+            "style": "red",
+            "url": "https://web.sanguosha.com/login/index.html?referType=1"
+          },
+          {
+            "name": "同城",
+            "style": "red",
+            "url": "https://weibo.com/hot/weibo/1028032222",
+            "icon": "weibo"
+          },
+          {
+            "name": "radio-browser.info",
+            "style": "violet",
+            "url": "https://www.radio-browser.info/"
+          },
+          {
+            "name": "广播直播·央广网",
+            "style": "red",
+            "url": "https://www.cnr.cn/gbzb/"
+          },
+          {
+            "name": "主页",
+            "style": "pink",
+            "url": "https://asmrmoon.com/"
+          },
+          {
+            "name": "PestArchive 害虫档案库",
+            "style": "basic",
+            "url": "https://pestarchive.com/zh-CN/"
+          }
+        ]
+      }
+    ]
+  }
+]

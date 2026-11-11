@@ -1,0 +1,52 @@
+---
+import site from '../data/site';
+import builtWith from '../data/built_with.json';
+import poweredBy from '../data/powered_by.json';
+
+const year = new Date().getFullYear();
+---
+
+<div class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">Built with</h4>
+                <div class="ui inverted link list">
+                    {builtWith.map((item) => (
+                        <a class="item" href={item.url} target="_blank">{item.name}</a>
+                    ))}
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">Powered by</h4>
+                <div class="ui inverted link list">
+                    {poweredBy.map((item) => (
+                        <a class="item" href={item.url} target="_blank" set:html={item.name} />
+                    ))}
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">About</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href={site.authorUrl} target="_blank">{site.author}</a>
+                    <a class="item" href={site.modifiedFromUrl} target="_blank">修改自 {site.modifiedFrom}</a>
+                    <a class="item" href={site.sourceUrl} target="_blank">内容参考 {site.sourceName}</a>
+                    <a class="item" href="/donate/">Donate</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">{site.title}</h4>
+                <div class="ui inverted link list">
+                    <div class="item">&copy; {year} {site.organization}</div>
+                    <div class="item">Designed and built with all the love and passion in the world by {site.author}.</div>
+                    <a class="item" href="/analytics/">
+                        Visits / Page Views:
+                        <span id="today-visits">0</span> / <span id="today-actions">0</span> (Today)
+                        &middot;
+                        <span id="yesterday-visits">0</span> / <span id="yesterday-actions">0</span> (Yesterday)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+---
+import site from '../data/site';
+import analytics from '../data/analytics.json';
+import banner from '../data/banner.json';
+import style from '../data/style.json';
+import Analytics from '../components/Analytics.astro';
+import FollowingMenu from '../components/FollowingMenu.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+    activeKey?: string;
+    title?: string;
+    icon?: string;
+}
+
+const { activeKey, title, icon } = Astro.props as Props;
+
+const pageTitle = title ? `${title} | ${site.title}` : site.title;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const builtAt = new Date().toISOString();
+
+const pageStyles = {
+    home: 'home.css',
+    customize: 'customize.css',
+    analytics: 'analytics.css',
+    donate: 'donate.css',
+    search: 'search.css',
+    error: 'error.css',
+};
+const pageStyle = pageStyles[activeKey];
+
+const byrNaviConfig = {
+    matomo: analytics.matomo.site_id
+        ? {
+              url: analytics.matomo.url,
+              siteId: analytics.matomo.site_id,
+              token: analytics.matomo.token,
+          }
+        : null,
+    updateInterval: site.updateInterval,
+};
+
+const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.title,
+    url: site.url,
+    description: site.description,
+};
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="repository" content={site.repository} />
+    <meta name="built_at" content={builtAt} />
+    <meta name="established_at" content={site.establishedAt} />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={site.description} />
+    <meta name="keywords" content={site.keywords} />
+    <meta name="author" content={site.author} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:site_name" content={site.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={site.lang} />
+    <meta property="og:image" content={new URL(site.image, site.url).href} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={site.description} />
+    <meta name="twitter:image" content={new URL(site.image, site.url).href} />
+    {!title && <script is:inline type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
+    {pageStyle && <link rel="stylesheet" type="text/css" href={`/assets/css/${pageStyle}`} />}
+    <link rel="stylesheet" type="text/css" href="/assets/css/masthead.css" />
+    {activeKey === 'home' && style.memorial && <link rel="stylesheet" type="text/css" href="/assets/css/grayscale.css" />}
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo-chum.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <Analytics />
+</head>
+<body>
+    <FollowingMenu />
+    <Sidebar />
+    <div class="pusher">
+        <Header activeKey={activeKey} title={title} icon={icon} />
+        <slot />
+        <Footer />
+    </div>
+
+    <script is:inline type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script is:inline type="text/javascript" src="//unpkg.com/fomantic-ui/dist/semantic.min.js"></script>
+    <script is:inline define:vars={{ byrNaviConfig }}>
+        window.BYR_NAVI = byrNaviConfig;
+    </script>
+    <script is:inline type="text/javascript" src="/assets/js/common.js"></script>
+
+    {activeKey === 'home' && (
+        <>
+            <script is:inline type="text/javascript" src="//unpkg.com/dayjs/dayjs.min.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/dayjs/locale/zh-cn.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/dayjs/plugin/relativeTime.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/js-cookie/dist/js.cookie.min.js"></script>
+            <script is:inline type="text/javascript" src="/assets/js/suggest-query.min.js"></script>
+            {banner.message.hitokoto && (
+                <script is:inline type="text/javascript" src="/assets/js/hitokoto.js"></script>
+            )}
+            <script is:inline type="text/javascript" src="/assets/js/home.js"></script>
+        </>
+    )}
+
+    {activeKey === 'customize' && (
+        <>
+            <script is:inline type="text/javascript" src="//unpkg.com/js-cookie/dist/js.cookie.min.js"></script>
+            <script is:inline type="text/javascript" src="/assets/js/customize.js"></script>
+        </>
+    )}
+
+    {activeKey === 'analytics' && (
+        <>
+            <script is:inline type="text/javascript" src="//unpkg.com/jquery-countdown/dist/jquery.countdown.min.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/countup.js@1.9.3/dist/countUp.min.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/echarts@4.9.0/dist/echarts.min.js"></script>
+            <script is:inline type="text/javascript" src="//unpkg.com/echarts@4.9.0/map/js/world.js"></script>
+            <script is:inline type="text/javascript" src="/assets/js/analytics.js"></script>
+        </>
+    )}
+
+    {activeKey === 'search' && (
+        <>
+            <script is:inline type="text/javascript" src="//unpkg.com/js-url/url.min.js"></script>
+            <script is:inline type="text/javascript" src="/assets/js/search.js"></script>
+        </>
+    )}
+</body>
+</html>

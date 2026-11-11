@@ -1,0 +1,53 @@
+---
+import site from '../data/site';
+import menuItems from '../data/menu_items.json';
+import MenuItems from './MenuItems.astro';
+import SearchBox from './SearchBox.astro';
+
+interface Props {
+    activeKey?: string;
+    title?: string;
+    icon?: string;
+}
+
+const { activeKey, title, icon } = Astro.props as Props;
+
+const pageIcon = menuItems.find((item) => item.active_key === activeKey)?.icon ?? icon;
+---
+
+<div class="ui inverted vertical masthead center aligned segment zoomed">
+    <div class="ui container">
+        <div class="ui large borderless inverted menu" style="border: none;">
+            <div class="toc link icon item"><i class="sidebar icon"></i></div>
+            <a class="header item" href="/">
+                <div class="ui middle aligned image">
+                    <img class="logo-image" src={site.logoWhite} alt="Logo" />
+                </div>
+                <div class="logo-text">{site.aliasEn}</div>
+            </a>
+            <MenuItems />
+            <div class="right menu">
+                <a class="item" href={site.repositoryUrl} target="_blank"><i class="github icon"></i>GitHub</a>
+            </div>
+        </div>
+    </div>
+    {activeKey === 'home' ? (
+        <SearchBox />
+    ) : (
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                {pageIcon && <i class={`${pageIcon} icon`}></i>}
+                {title}
+            </h1>
+            {activeKey === 'customize' && (
+                <div class="ui mini black label"><i class="vial icon"></i>Beta Feature</div>
+            )}
+            {activeKey === 'analytics' && (
+                <div id="established-at" class="ui mini black labels"></div>
+            )}
+            {activeKey === 'donate' && (
+                <h2 class="ui inverted header">请为辛苦的开发者众筹一杯星冰乐</h2>
+            )}
+        </div>
+    )}
+</div>

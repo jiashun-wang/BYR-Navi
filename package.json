@@ -1,0 +1,16 @@
+{
+  "name": "byr-navi",
+  "type": "module",
+  "version": "2.0.0",
+  "private": true,
+  "description": "垃圾桶学术导航 — a configurable academic navigation site built with Astro, modified from BYR-Navi.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^6.4.8"
+  }
+}

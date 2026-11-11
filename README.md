@@ -1,87 +1,99 @@
-[![Build Status](https://img.shields.io/travis/com/BYR-Navi/BYR-Navi?logo=travisci)][travis-ci]
-[![Website](https://img.shields.io/website?url=http%3A%2F%2Fbyr-navi.com&logo=linode)][website]
-[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi)][license]
-[![Last Commit](https://img.shields.io/github/last-commit/BYR-Navi/BYR-Navi?logo=github)][commit]
-[![Donate](https://img.shields.io/badge/Donate-Coffee-A5673F?logo=buymeacoffee)][donate]
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fchum-bucket.site&logo=astro)][website]
+[![License](https://img.shields.io/github/license/jiashun-wang/BYR-Navi)][license]
+[![Last Commit](https://img.shields.io/github/last-commit/jiashun-wang/BYR-Navi?logo=github)][commit]
 
-# <img height="32" src="https://byr-navi.com/images/logo-dark.svg" alt="Icon" /> BYR-Navi
-A Light-Weight and Configurable Navigation [Website][website] Framework (for BYR)
+# <img height="32" src="https://chum-bucket.site/images/logo-chum.svg" alt="Icon" /> 垃圾桶学术导航
+A Light-Weight and Configurable Academic Navigation Website
+
+> **Attribution:** This project is modified from [BYR-Navi][upstream] and migrated from Jekyll to [Astro][astro].
+> The navigation content is adapted from [海之霸科研导航][source] (`https://chum-bucket.site/`).
+> Maintained by **Chum-Bucket团队**.
 
 ## :triangular_ruler: Design Philosophy
-This project is a [Jekyll][jekyll]-powered website, which is built based on [Fomantic UI][fomantic] web framework, and deployed **previously** using [GitHub Pages][github-pages] (while currently running on a [Linode][linode] VPS).
+This project is an [Astro][astro]-powered static website, built on the [Fomantic UI][fomantic] web framework.
+It focuses on physical oceanography, marine meteorology and scientific computing resources.
 
-The whole project is designed and built with high flexibility of configuration and customization.
-You can either configure it by modifying the `_config.yml` file or customize it by replacing the content of the `*.yml` files in the `_data` folder with your own data.
+Site identity and metadata live in `src/data/site.ts`, while the content of every navigation page is driven by the JSON files in `src/data/`.
 
 ## :book: A Tiny Tutorial
-There is **no easy way for beginners** without essential background knowledge.
-To be efficient, the best way to understand this project is to start with the Jekyll&rsquo;s [docs][jekyll-doc] and Fomantic UI&rsquo;s [docs][fomantic-doc].
-
 Before you start, you should have some basic understanding of the following:
 
 - <img height="16" src="https://unpkg.com/simple-icons/icons/html5.svg" alt="Icon" /> HTML
 - <img height="16" src="https://unpkg.com/simple-icons/icons/css3.svg" alt="Icon" /> CSS
 - <img height="16" src="https://unpkg.com/simple-icons/icons/javascript.svg" alt="Icon" /> JavaScript
 - <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" alt="Icon" /> jQuery
-- YAML format
-- [Liquid][liquid] (Template Engine by <img height="16" src="https://unpkg.com/simple-icons/icons/shopify.svg" alt="Icon" /> Shopify)
-- <img height="16" src="https://unpkg.com/simple-icons/icons/ruby.svg" alt="Icon" /> Ruby
-- <img height="16" src="https://unpkg.com/simple-icons/icons/linux.svg" alt="Icon" /> UNIX/Linux Shell Script
+- JSON
 
 ### Quick Start
 
-1. Install a full [Ruby development environment][jekyll-installation].
+1. Install [Node.js][node] (v22.12 or newer).
 
-2. Install Jekyll and [bundler][jekyll-ruby-101-bundler] [gems][jekyll-ruby-101-gems].
-
-```sh
-gem install jekyll bundler
-```
-
-3. Clone the project from GitHub.
+2. Clone the project from GitHub.
 
 ```sh
-git clone https://github.com/BYR-Navi/BYR-Navi.git
+git clone https://github.com/jiashun-wang/BYR-Navi.git
 ```
 
-4. Change into the project directory.
+3. Change into the project directory.
 
 ```sh
 cd BYR-Navi
 ```
 
-5. Install required gems in the `Gemfile` using Bundler.
+4. Install dependencies.
 
 ```sh
-bundle install
+npm install
 ```
 
-6. Build the site and make it available on a local server.
+5. Start the development server.
 
 ```sh
-bundle exec jekyll serve
+npm run dev
 ```
 
-7. Now browse to [http://localhost:4000][localhost-4000].
+6. Now browse to [http://localhost:4321][localhost-4321].
+
+### Configuration
+
+- `src/data/site.ts` — site title, description, logo, author, attribution, update interval, etc.
+- `src/data/scenes.json` — switchable scenes, their categories and links on the home page. Each scene is exposed as `/#<scene-id>` (e.g. `/#tech`).
+- `src/data/menu_items.json` — top menu items.
+- `src/data/search_services.json` — search engines, shortcuts and URL templates.
+- `src/data/banner.json` — announcement banner and advertisement.
+- `src/data/analytics.json` — Google Analytics / Matomo settings (still inherited from the upstream project).
+- `src/data/built_with.json`, `src/data/powered_by.json` — footer credits.
+- `src/data/style.json` — optional site-wide style switches (e.g. memorial grayscale mode).
+
+### Project Structure
+
+```text
+src/
+├── components/       # header, footer, sidebar, search box, ...
+├── data/             # site configuration and page content
+├── layouts/          # shared HTML document layout
+└── pages/            # routes: /, /customize/, /analytics/, /donate/, /search/, 404
+public/
+├── assets/css/       # stylesheets
+├── assets/js/        # client-side scripts
+└── images/           # logos and masthead backgrounds
+```
 
 ## :construction: Deployment
 
-### GitHub Pages (Recommended)
-Sites on GitHub Pages are powered by Jekyll behind the scenes, so if you&rsquo;re looking for a zero-hassle, zero-cost solution, GitHub Pages are a great way to [host your Jekyll-powered website for free][jekyll-gihub-pages].
+### Build
 
-### Manual Deployment
-Jekyll generates your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
-[Here][jekyll-manual-deployment] are some manual ways of achieving this.
+```sh
+npm run build
+```
 
-## :hearts: Share the Love
-I&rsquo;ve put a lot of time and effort into making **BYR-Navi** awesome.
-If you love it, you can buy me a coffee.
-Every cup helps!
-I promise it will be a good investment.
+Astro generates the static site to the `dist/` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-Donate [here][donate].
+## :warning: Upstream Resources
+The inherited `src/data/analytics.json` still points to the upstream BYR-Navi Google Analytics / Matomo properties, and the QR codes on `/donate/` belong to the original BYR-Navi author. Replace or remove them before deploying this fork publicly.
 
 ## :rocket: Powered by
+- <img height="16" src="https://unpkg.com/simple-icons/icons/astro.svg" alt="Icon" /> [Astro][astro]
 - [Fomantic UI][fomantic]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/jquery.svg" alt="Icon" /> [jQuery][jquery]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/shieldsdotio.svg" alt="Icon" /> [Shields.io][shields]
@@ -94,22 +106,19 @@ Donate [here][donate].
 - [Hitokoto][hitokoto]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/apacheecharts.svg" alt="Icon" /> [ECharts][echarts]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/matomo.svg" alt="Icon" /> [Matomo][matomo]
-- [GeoIP][geoip]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/jekyll.svg" alt="Icon" /> [Jekyll][jekyll]
 - <img height="16" src="https://unpkg.com/simple-icons/icons/letsencrypt.svg" alt="Icon" /> [Let&rsquo;s Encrypt][letsencrypt]
-- <img height="16" src="https://unpkg.com/simple-icons/icons/linode.svg" alt="Icon" /> [Linode][linode]
 
 ## :copyright: License
-[MIT License][license]
+[MIT License][license]. The original BYR-Navi project is also MIT licensed.
 
-[travis-ci]: https://app.travis-ci.com/BYR-Navi/BYR-Navi "Travis CI"
-[website]: https://byr-navi.com/ "Website"
-[license]: https://github.com/BYR-Navi/BYR-Navi/blob/master/LICENSE "License"
-[commit]: https://github.com/BYR-Navi/BYR-Navi/commits/master "Last Commit"
-[donate]: https://byr-navi.com/donate/ "Donate"
+[website]: https://chum-bucket.site/ "Website"
+[source]: https://chum-bucket.site/ "海之霸科研导航"
+[upstream]: https://github.com/BYR-Navi/BYR-Navi "BYR-Navi"
+[license]: https://github.com/jiashun-wang/BYR-Navi/blob/master/LICENSE "License"
+[commit]: https://github.com/jiashun-wang/BYR-Navi/commits/master "Last Commit"
 
+[astro]: https://astro.build/ "Astro"
 [fomantic]: https://fomantic-ui.com/ "Fomantic UI"
-[fomantic-doc]: https://fomantic-ui.com/introduction/getting-started.html "Fomantic UI Docs"
 [jquery]: https://jquery.com/ "jQuery"
 [shields]: https://shields.io/ "Shields.io"
 [day]: https://github.com/iamkun/dayjs "Day.js"
@@ -121,16 +130,6 @@ Donate [here][donate].
 [hitokoto]: https://hitokoto.cn/api "Hitokoto"
 [echarts]: https://echarts.apache.org/ "ECharts"
 [matomo]: https://matomo.org/ "Matomo"
-[geoip]: https://www.maxmind.com/ "GeoIP"
-[jekyll]: https://jekyllrb.com/ "Jekyll"
-[jekyll-doc]: https://jekyllrb.com/docs/home/ "Jekyll Docs"
-[jekyll-installation]: https://jekyllrb.com/docs/installation/ "Jekyll Installation"
-[jekyll-gihub-pages]: https://jekyllrb.com/docs/github-pages/ "Jekyll GitHub Pages"
-[jekyll-manual-deployment]: https://jekyllrb.com/docs/deployment/manual/ "Jekyll Manual Deployment"
-[jekyll-ruby-101-gems]: https://jekyllrb.com/docs/ruby-101/#gems "Jekyll Ruby 101 Gems"
-[jekyll-ruby-101-bundler]: https://jekyllrb.com/docs/ruby-101/#bundler "Jekyll Ruby 101 Bundler"
-[liquid]: https://shopify.github.io/liquid/ "Liquid"
-[localhost-4000]: http://localhost:4000 "Local Host (Port: 4000)"
-[github-pages]: https://pages.github.com/ "GitHub Pages"
+[node]: https://nodejs.org/ "Node.js"
+[localhost-4321]: http://localhost:4321 "Local Host (Port: 4321)"
 [letsencrypt]: https://letsencrypt.org/ "Let&rsquo;s Encrypt"
-[linode]: https://www.linode.com/ "Linode"

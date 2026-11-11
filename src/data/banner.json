@@ -1,0 +1,20 @@
+{
+  "message": {
+    "show": true,
+    "hitokoto": true,
+    "content": "垃圾桶学术导航",
+    "detail": "物理海洋 · 海洋气象 · 海洋数值模式",
+    "color": "black",
+    "icon": "compass",
+    "image": false,
+    "link": "https://chum-bucket.site/"
+  },
+  "advertisement": {
+    "show": false,
+    "content": "海之霸科研导航",
+    "detail": "信息整合门户，服务于物理海洋和海洋气象的科研人士",
+    "color": "black",
+    "icon": "university",
+    "link": "https://chum-bucket.site/"
+  }
+}

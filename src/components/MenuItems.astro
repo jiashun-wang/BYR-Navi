@@ -1,0 +1,7 @@
+---
+import menuItems from '../data/menu_items.json';
+---
+
+{menuItems.map((item) => (
+    <a class="item" href={item.url}><i class={`${item.icon} icon`}></i>{item.name}</a>
+))}

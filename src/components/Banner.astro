@@ -1,0 +1,35 @@
+---
+import banner from '../data/banner.json';
+
+const advertisement = banner.advertisement;
+const message = banner.message;
+---
+
+{advertisement.show && (
+    <div id="banner-advertisement">
+        <a class={`ui mini ${advertisement.color} label`} href={advertisement.link} target="_blank">
+            <i class={`${advertisement.icon} icon`}></i>
+            <span class="ui grey text">&lt;广告&gt;</span>&nbsp;{advertisement.content}
+            <div class="detail">{advertisement.detail}</div>
+        </a>
+    </div>
+)}
+{message.show && (
+    message.hitokoto ? (
+        <a id="hitokoto" class="ui mini black pointing below label"><i class="quote left icon"></i></a>
+    ) : (
+        <a
+            class={`ui mini ${message.color} pointing below${!message.icon && message.image ? ' image' : ''} label`}
+            href={message.link ? message.link : '/donate/'}
+            target="_blank"
+        >
+            {message.icon ? (
+                <i class={`${message.icon} icon`}></i>
+            ) : message.image ? (
+                <img src={message.image} alt="Message Image" />
+            ) : null}
+            {message.content}
+            {message.detail && <div class="detail">{message.detail}</div>}
+        </a>
+    )
+)}

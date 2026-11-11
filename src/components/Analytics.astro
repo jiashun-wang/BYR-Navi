@@ -1,0 +1,34 @@
+---
+import analytics from '../data/analytics.json';
+
+const googleId = analytics.google?.id;
+const matomo = analytics.matomo;
+---
+
+{googleId && (
+    <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${googleId}`}></script>
+        <script is:inline define:vars={{ googleId }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', googleId);
+        </script>
+    </>
+)}
+
+{matomo.site_id && (
+    <script is:inline define:vars={{ matomo }}>
+        var _paq = _paq || [];
+        _paq.push(['setDomains', matomo.domains]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = matomo.url;
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', matomo.site_id]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+)}
